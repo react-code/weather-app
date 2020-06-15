@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.app-cloudy, .app-clear, .app-rainy, .app-haze, .app-thunderstorm, .app-sunny, .app{
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.app {
+  background-image: url('./assets/weather-bg.png');
+}
+
+.app-cloudy{
+  background-image: url('./assets/cloudy-bg.jpg');
+}
+
+.app-clear{
+  background-image: url('./assets/clear-bg.jpg');
+}
+
+.app-rainy{
+  background-image: url('./assets/rainy-bg.jpg');
+}
+
+.app-haze{
+  background-image: url('./assets/haze-bg.jpg');
+}
+
+.app-thunderstorm{
+  background-image: url('./assets/thunderstorm-bg.jpg');
+}
+
+.app-sunny{
+  background-image: url('./assets/sunny-bg.jpg');
+}
+
+.searchbar{
+  display: block;
+  width: 60%;
+  padding: 15px;
+  margin: auto;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.searchbar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.temperature{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-icon i{
+  display: block;
+  font-size: 5rem;
+  color: #fff;
+  margin: 40px auto 20px;
+}
+
+.default-text{
+  width: 40%;
+  margin: 70px auto;
+  color: #fff;
+  font-weight: 100;
+}
